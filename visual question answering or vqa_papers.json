@@ -1,0 +1,367 @@
+[
+  {
+    "title": "Discovering the Real Association: Multimodal Causal Reasoning in Video Question Answering",
+    "abstract": "Video Question Answering (VideoQA) is challenging as it requires capturing accurate correlations between modalities from redundant information. Recent methods focus on the explicit challenges of the task, e.g. multimodal feature extraction, video-text alignment and fusion. Their frameworks reason the answer relying on statistical evidence causes, which ignores potential bias in the multimodal data. In our work, we investigate relational structure from a causal representation perspective on multimodal data and propose a novel inference framework. For visual data, question-irrelevant objects may establish simple matching associations with the answer. For textual data, the model prefers the local phrase semantics which may deviate from the global semantics in long sentences. Therefore, to enhance the generalization of the model, we discover the real association by explicitly capturing visual features that are causally related to the question semantics and weakening the impact of local language semantics on question answering. The experimental results on two large causal VideoQA datasets verify that our proposed framework 1) improves the accuracy of the existing VideoQA backbone, 2) demonstrates robustness on complex scenes and questions.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zang_Discovering_the_Real_Association_Multimodal_Causal_Reasoning_in_Video_Question_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Prompting Large Language Models With Answer Heuristics for Knowledge-Based Visual Question Answering",
+    "abstract": "Knowledge-based visual question answering (VQA) requires external knowledge beyond the image to answer the question. Early studies retrieve required knowledge from explicit knowledge bases (KBs), which often introduces irrelevant information to the question, hence restricting the performance of their models. Recent works have sought to use a large language model (i.e., GPT-3) as an implicit knowledge engine to acquire the necessary knowledge for answering. Despite the encouraging results achieved by these methods, we argue that they have not fully activated the capacity of GPT-3 as the provided input information is insufficient. In this paper, we present Prophet---a conceptually simple framework designed to prompt GPT-3 with answer heuristics for knowledge-based VQA. Specifically, we first train a vanilla VQA model on a specific knowledge-based VQA dataset without external knowledge. After that, we extract two types of complementary answer heuristics from the model: answer candidates and answer-aware examples. Finally, the two types of answer heuristics are encoded into the prompts to enable GPT-3 to better comprehend the task thus enhancing its capacity. Prophet significantly outperforms all existing state-of-the-art methods on two challenging knowledge-based VQA datasets, OK-VQA and A-OKVQA, delivering 61.1% and 55.7% accuracies on their testing sets, respectively.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Shao_Prompting_Large_Language_Models_With_Answer_Heuristics_for_Knowledge-Based_Visual_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Generative Bias for Robust Visual Question Answering",
+    "abstract": "The task of Visual Question Answering (VQA) is known to be plagued by the issue of VQA models exploiting biases within the dataset to make its final prediction. Various previous ensemble based debiasing methods have been proposed where an additional model is purposefully trained to be biased in order to train a robust target model. However, these methods compute the bias for a model simply from the label statistics of the training data or from single modal branches. In this work, in order to better learn the bias a target VQA model suffers from, we propose a generative method to train the bias model directly from the target model, called GenB. In particular, GenB employs a generative network to learn the bias in the target model through a combination of the adversarial objective and knowledge distillation. We then debias our target model with GenB as a bias model, and show through extensive experiments the effects of our method on various VQA bias datasets including VQA-CP2, VQA-CP1, GQA-OOD, and VQA-CE, and show state-of-the-art results with the LXMERT architecture on VQA-CP2.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Cho_Generative_Bias_for_Robust_Visual_Question_Answering_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Divide and Conquer: Answering Questions With Object Factorization and Compositional Reasoning",
+    "abstract": "Humans have the innate capability to answer diverse questions, which is rooted in the natural ability to correlate different concepts based on their semantic relationships and decompose difficult problems into sub-tasks. On the contrary, existing visual reasoning methods assume training samples that capture every possible object and reasoning problem, and rely on black-boxed models that commonly exploit statistical priors. They have yet to develop the capability to address novel objects or spurious biases in real-world scenarios, and also fall short of interpreting the rationales behind their decisions. Inspired by humans' reasoning of the visual world, we tackle the aforementioned challenges from a compositional perspective, and propose an integral framework consisting of a principled object factorization method and a novel neural module network. Our factorization method decomposes objects based on their key characteristics, and automatically derives prototypes that represent a wide range of objects. With these prototypes encoding important semantics, the proposed network then correlates objects by measuring their similarity on a common semantic space and makes decisions with a compositional reasoning process. It is capable of answering questions with diverse objects regardless of their availability during training, and overcoming the issues of biased question-answer distributions. In addition to the enhanced generalizability, our framework also provides an interpretable interface for understanding the decision-making process of models. Our code is available at https://github.com/szzexpoi/POEM.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Chen_Divide_and_Conquer_Answering_Questions_With_Object_Factorization_and_Compositional_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "EXCALIBUR: Encouraging and Evaluating Embodied Exploration",
+    "abstract": "Experience precedes understanding. Humans constantly explore and learn about their environment out of curiosity, gather information, and update their models of the world. On the other hand, machines are either trained to learn passively from static and fixed datasets, or taught to complete specific goal-conditioned tasks. To encourage the development of exploratory interactive agents, we present the EXCALIBUR benchmark. EXCALIBUR allows agents to explore their environment for long durations and then query their understanding of the physical world via inquiries like: \"is the small heavy red bowl made from glass?\" or \"is there a silver spoon heavier than the egg?\". This design encourages agents to perform free-form home exploration without myopia induced by goal conditioning. Once the agents have answered a series of questions, they can renter the scene to refine their knowledge, update their beliefs, and improve their performance on the questions. Our experiments demonstrate the challenges posed by this dataset for the present-day state-of-the-art embodied systems and the headroom afforded to develop new innovative methods. Finally, we present a virtual reality interface that enables humans to seamlessly interact within the simulated world and use it to gather human performance measures. EXCALIBUR affords unique challenges in comparison to present-day benchmarks and represents the next frontier for embodied AI research.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zhu_EXCALIBUR_Encouraging_and_Evaluating_Embodied_Exploration_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Improving Selective Visual Question Answering by Learning From Your Peers",
+    "abstract": "Despite advances in Visual Question Answering (VQA), the ability of models to assess their own correctness remains underexplored. Recent work has shown that VQA models, out-of-the-box, can have difficulties abstaining from answering when they are wrong. The option to abstain, also called Selective Prediction, is highly relevant when deploying systems to users who must trust the system's output (e.g., VQA assistants for users with visual impairments). For such scenarios, abstention can be especially important as users may provide out-of-distribution (OOD) or adversarial inputs that make incorrect answers more likely. In this work, we explore Selective VQA in both in-distribution (ID) and OOD scenarios, where models are presented with mixtures of ID and OOD data. The goal is to maximize the number of questions answered while minimizing the risk of error on those questions. We propose a simple yet effective Learning from Your Peers (LYP) approach for training multimodal selection functions for making abstention decisions. Our approach uses predictions from models trained on distinct subsets of the training data as targets for optimizing a Selective VQA model. It does not require additional manual labels or held-out data and provides a signal for identifying examples that are easy/difficult to generalize to. In our extensive evaluations, we show this benefits a number of models across different architectures and scales. Overall, for ID, we reach 32.92% in the selective prediction metric coverage at 1% risk of error (C@1%) which doubles the previous best coverage of 15.79% on this task. For mixed ID/OOD, using models' softmax confidences for abstention decisions performs very poorly, answering <5% of questions at 1% risk of error even when faced with only 10% OOD examples, but a learned selection function with LYP can increase that to 25.38% C@1%.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Dancette_Improving_Selective_Visual_Question_Answering_by_Learning_From_Your_Peers_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Q: How To Specialize Large Vision-Language Models to Data-Scarce VQA Tasks? A: Self-Train on Unlabeled Images!",
+    "abstract": "Finetuning a large vision language model (VLM) on a target dataset after large scale pretraining is a dominant paradigm in visual question answering (VQA). Datasets for specialized tasks such as knowledge-based VQA or VQA in non natural-image domains are orders of magnitude smaller than those for general-purpose VQA. While collecting additional labels for specialized tasks or domains can be challenging, unlabeled images are often available. We introduce SelTDA (Self-Taught Data Augmentation), a strategy for finetuning large VLMs on small-scale VQA datasets. SelTDA uses the VLM and target dataset to build a teacher model that can generate question-answer pseudolabels directly conditioned on an image alone, allowing us to pseudolabel unlabeled images. SelTDA then finetunes the initial VLM on the original dataset augmented with freshly pseudolabeled images. We describe a series of experiments showing that our self-taught data augmentation increases robustness to adversarially searched questions, counterfactual examples, and rephrasings, it improves domain generalization, and results in greater retention of numerical reasoning skills. The proposed strategy requires no additional annotations or architectural modifications, and is compatible with any modern encoder-decoder multimodal transformer. Code available at https://github.com/codezakh/SelTDA",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Khan_Q_How_To_Specialize_Large_Vision-Language_Models_to_Data-Scarce_VQA_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "VQACL: A Novel Visual Question Answering Continual Learning Setting",
+    "abstract": "Research on continual learning has recently led to a variety of work in unimodal community, however little attention has been paid to multimodal tasks like visual question answering (VQA). In this paper, we establish a novel VQA Continual Learning setting named VQACL, which contains two key components: a dual-level task sequence where visual and linguistic data are nested, and a novel composition testing containing new skill-concept combinations. The former devotes to simulating the ever-changing multimodal datastream in real world and the latter aims at measuring models' generalizability for cognitive reasoning. Based on our VQACL, we perform in-depth evaluations of five well-established continual learning methods, and observe that they suffer from catastrophic forgetting and have weak generalizability. To address above issues, we propose a novel representation learning method, which leverages a sample-specific and a sample-invariant feature to learn representations that are both discriminative and generalizable for VQA. Furthermore, by respectively extracting such representation for visual and textual input, our method can explicitly disentangle the skill and concept. Extensive experimental results illustrate that our method significantly outperforms existing models, demonstrating the effectiveness and compositionality of the proposed approach.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Super-CLEVR: A Virtual Benchmark To Diagnose Domain Robustness in Visual Reasoning",
+    "abstract": "Visual Question Answering (VQA) models often perform poorly on out-of-distribution data and struggle on domain generalization. Due to the multi-modal nature of this task, multiple factors of variation are intertwined, making generalization difficult to analyze. This motivates us to introduce a virtual benchmark, Super-CLEVR, where different factors in VQA domain shifts can be isolated in order that their effects can be studied independently. Four factors are considered: visual complexity, question redundancy, concept distribution and concept compositionality. With controllably generated data, Super-CLEVR enables us to test VQA methods in situations where the test data differs from the training data along each of these axes. We study four existing methods, including two neural symbolic methods NSCL and NSVQA, and two non-symbolic methods FiLM and mDETR; and our proposed method, probabilistic NSVQA (P-NSVQA), which extends NSVQA with uncertainty reasoning. P-NSVQA outperforms other methods on three of the four domain shift factors. Our results suggest that disentangling reasoning and perception, combined with probabilistic uncertainty, form a strong VQA model that is more robust to domain shifts. The dataset and code are released at https://github.com/Lizw14/Super-CLEVR.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Li_Super-CLEVR_A_Virtual_Benchmark_To_Diagnose_Domain_Robustness_in_Visual_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "ANetQA: A Large-Scale Benchmark for Fine-Grained Compositional Reasoning Over Untrimmed Videos",
+    "abstract": "Building benchmarks to systemically analyze different capabilities of video question answering (VideoQA) models is challenging yet crucial. Existing benchmarks often use non-compositional simple questions and suffer from language biases, making it difficult to diagnose model weaknesses incisively. A recent benchmark AGQA poses a promising paradigm to generate QA pairs automatically from pre-annotated scene graphs, enabling it to measure diverse reasoning abilities with granular control. However, its questions have limitations in reasoning about the fine-grained semantics in videos as such information is absent in its scene graphs. To this end, we present ANetQA, a large-scale benchmark that supports fine-grained compositional reasoning over the challenging untrimmed videos from ActivityNet. Similar to AGQA, the QA pairs in ANetQA are automatically generated from annotated video scene graphs. The fine-grained properties of ANetQA are reflected in the following: (i) untrimmed videos with fine-grained semantics; (ii) spatio-temporal scene graphs with fine-grained taxonomies; and (iii) diverse questions generated from fine-grained templates. ANetQA attains 1.4 billion unbalanced and 13.4 million balanced QA pairs, which is an order of magnitude larger than AGQA with a similar number of videos. Comprehensive experiments are performed for state-of-the-art methods. The best model achieves 44.5% accuracy while human performance tops out at 84.5%, leaving sufficient room for improvement.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Yu_ANetQA_A_Large-Scale_Benchmark_for_Fine-Grained_Compositional_Reasoning_Over_Untrimmed_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Exploring the Effect of Primitives for Compositional Generalization in Vision-and-Language",
+    "abstract": "Compositionality is one of the fundamental properties of human cognition (Fodor & Pylyshyn, 1988). Compositional generalization is critical to simulate the compositional capability of humans, and has received much attention in the vision-and-language (V&L) community. It is essential to understand the effect of the primitives, including words, image regions, and video frames, to improve the compositional generalization capability. In this paper, we explore the effect of primitives for compositional generalization in V&L. Specifically, we present a self-supervised learning based framework that equips V&L methods with two characteristics: semantic equivariance and semantic invariance. With the two characteristics, the methods understand primitives by perceiving the effect of primitive changes on sample semantics and ground-truth. Experimental results on two tasks: temporal video grounding and visual question answering, demonstrate the effectiveness of our framework.",
+    "decision": "Yes, Visual Question Answering/VQA and Visual Grounding",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Li_Exploring_the_Effect_of_Primitives_for_Compositional_Generalization_in_Vision-and-Language_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa",
+      "visual grounding"
+    ]
+  },
+  {
+    "title": "Relational Space-Time Query in Long-Form Videos",
+    "abstract": "Egocentric videos are often available in the form of uninterrupted, uncurated long videos capturing the camera wearers' daily life activities.Understanding these videos requires models to be able to reason about activities, objects, and their interactions. However, current video benchmarks study these problems independently and under short, curated clips. In contrast, real-world applications, e.g., AR assistants, require bundling these problems for both model development and evaluation. In this paper, we propose to study these problems in a joint framework for long video understanding. Our contributions are three-fold. First, we propose an integrated framework, namely Relational Space-Time Query (ReST), for evaluating video understanding models via templated spatiotemporal queries. Second, we introduce two new benchmarks, ReST-ADL and ReST-Ego4D, which augment the existing egocentric video datasets with abundant query annotations generated by the ReST framework. Finally, we present a set of baselines and in-depth analysis on the two benchmarks and provide insights about the query tasks. We view our integrated framework and benchmarks as a step towards comprehensive, multi-step reasoning in long videos, and believe it will facilitate the development of next generations of video understanding models.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Relational_Space-Time_Query_in_Long-Form_Videos_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "MIST: Multi-Modal Iterative Spatial-Temporal Transformer for Long-Form Video Question Answering",
+    "abstract": "To build Video Question Answering (VideoQA) systems capable of assisting humans in daily activities, seeking answers from long-form videos with diverse and complex events is a must. Existing multi-modal VQA models achieve promising performance on images or short video clips, especially with the recent success of large-scale multi-modal pre-training. However, when extending these methods to long-form videos, new challenges arise. On the one hand, using a dense video sampling strategy is computationally prohibitive. On the other hand, methods relying on sparse sampling struggle in scenarios where multi-event and multi-granularity visual reasoning are required. In this work, we introduce a new model named Multi-modal Iterative Spatial-temporal Transformer (MIST) to better adapt pre-trained models for long-form VideoQA. Specifically, MIST decomposes traditional dense spatial-temporal self-attention into cascaded segment and region selection modules that adaptively select frames and image regions that are closely relevant to the question itself. Visual concepts at different granularities are then processed efficiently through an attention module. In addition, MIST iteratively conducts selection and attention over multiple layers to support reasoning over multiple events. The experimental results on four VideoQA datasets, including AGQA, NExT-QA, STAR, and Env-QA, show that MIST achieves state-of-the-art performance and is superior at computation efficiency and interpretability.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Gao_MIST_Multi-Modal_Iterative_Spatial-Temporal_Transformer_for_Long-Form_Video_Question_Answering_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "From Images to Textual Prompts: Zero-Shot Visual Question Answering With Frozen Large Language Models",
+    "abstract": "Large language models (LLMs) have demonstrated excellent zero-shot generalization to new language tasks. However, effective utilization of LLMs for zero-shot visual question-answering (VQA) remains challenging, primarily due to the modality disconnection and task disconnection between LLM and VQA task. End-to-end training on vision and language data may bridge the disconnections, but is inflexible and computationally expensive. To address this issue, we propose Img2Prompt, a plug-and-play module that provides the prompts that can bridge the aforementioned modality and task disconnections, so that LLMs can perform zero-shot VQA tasks without end-to-end training. In order to provide such prompts, we further employ LLM-agnostic models to provide prompts that can describe image content and self-constructed question-answer pairs, which can effectively guide LLM to perform zero-shot VQA tasks. Img2Prompt offers the following benefits: 1) It can flexibly work with various LLMs to perform VQA. 2) Without the needing of end-to-end training, it significantly reduces the cost of deploying LLM for zero-shot VQA tasks. 3) It achieves comparable or better performance than methods relying on end-to-end training. For example, we outperform Flamingo by 5.6% on VQAv2. On the challenging A-OKVQA dataset, our method even outperforms few-shot methods by as much as 20%.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Guo_From_Images_to_Textual_Prompts_Zero-Shot_Visual_Question_Answering_With_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Logical Implications for Visual Question Answering Consistency",
+    "abstract": "Despite considerable recent progress in Visual Question Answering (VQA) models, inconsistent or contradictory answers continue to cast doubt on their true reasoning capabilities. However, most proposed methods use indirect strategies or strong assumptions on pairs of questions and answers to enforce model consistency. Instead, we propose a novel strategy intended to improve model performance by directly reducing logical inconsistencies. To do this, we introduce a new consistency loss term that can be used by a wide range of the VQA models and which relies on knowing the logical relation between pairs of questions and answers. While such information is typically not available in VQA datasets, we propose to infer these logical relations using a dedicated language model and use these in our proposed consistency loss function. We conduct extensive experiments on the VQA Introspect and DME datasets and show that our method brings improvements to state-of-the-art VQA models while being robust across different architectures and settings.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Tascon-Morales_Logical_Implications_for_Visual_Question_Answering_Consistency_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Learning Situation Hyper-Graphs for Video Question Answering",
+    "abstract": "Answering questions about complex situations in videos requires not only capturing of the presence of actors, objects, and their relations, but also the evolution of these relationships over time. A situation hyper-graph is a representation that describes situations as scene sub-graphs for video frames and hyper-edges for connected sub-graphs, and has been proposed to capture all such information in a compact structured form. In this work, we propose an architecture for Video Question Answering (VQA) that enables answering questions related to video content by predicting situation hyper-graphs, coined Situation Hyper-Graph based Video Question Answering (SHG-VQA). To this end, we train a situation hyper-graph decoder to implicitly identify graph representations with actions and object/human-object relationships from the input video clip and to use cross-attention between the predicted situation hyper-graphs and the question embedding to predict the correct answer. The proposed method is trained in an end-to-end manner and optimized by a cross-entropy based VQA loss function and a Hungarian matching loss for the situation graph prediction. The effectiveness of the proposed architecture is extensively evaluated on two challenging benchmarks: AGQA and STAR. Our results show that learning the underlying situation hyper-graphs helps the system to significantly improve its performance for novel challenges of video question answering task.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Urooj_Learning_Situation_Hyper-Graphs_for_Video_Question_Answering_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "S3C: Semi-Supervised VQA Natural Language Explanation via Self-Critical Learning",
+    "abstract": "VQA Natural Language Explanation (VQA-NLE) task aims to explain the decision-making process of VQA models in natural language. Unlike traditional attention or gradient analysis, free-text rationales can be easier to understand and gain users' trust. Existing methods mostly use post-hoc or self-rationalization models to obtain a plausible explanation. However, these frameworks are bottlenecked by the following challenges: 1) the reasoning process cannot be faithfully responded to and suffer from the problem of logical inconsistency. 2) Human-annotated explanations are expensive and time-consuming to collect. In this paper, we propose a new Semi-Supervised VQA-NLE via Self-Critical Learning (S3C), which evaluates the candidate explanations by answering rewards to improve the logical consistency between answers and rationales. With a semi-supervised learning framework, the S3C can benefit from a tremendous amount of samples without human-annotated explanations. A large number of automatic measures and human evaluations all show the effectiveness of our method. Meanwhile, the framework achieves a new state-of-the-art performance on the two VQA-NLE datasets.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Suo_S3C_Semi-Supervised_VQA_Natural_Language_Explanation_via_Self-Critical_Learning_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "RMLVQA: A Margin Loss Approach for Visual Question Answering With Language Biases",
+    "abstract": "Visual Question Answering models have been shown to suffer from language biases, where the model learns a correlation between the question and the answer, ignoring the image. While early works attempted to use question-only models or data augmentations to reduce this bias, we propose an adaptive margin loss approach having two components. The first component considers the frequency of answers within a question type in the training data, which addresses the concern of the class-imbalance causing the language biases. However, it does not take into account the answering difficulty of the samples, which impacts their learning. We address this through the second component, where instance-specific margins are learnt, allowing the model to distinguish between samples of varying complexity. We introduce a bias-injecting component to our model, and compute the instance-specific margins from the confidence of this component. We combine these with the estimated margins to consider both answer-frequency and task-complexity in the training loss. We show that, while the margin loss is effective for out-of-distribution (ood) data, the bias-injecting component is essential for generalising to in-distribution (id) data. Our proposed approach, Robust Margin Loss for Visual Question Answering (RMLVQA) improves upon the existing state-of-the-art results when compared to augmentation-free methods on benchmark VQA datasets suffering from language biases, while maintaining competitive performance on id data, making our method the most robust one among all comparable methods.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Basu_RMLVQA_A_Margin_Loss_Approach_for_Visual_Question_Answering_With_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Top-Down Visual Attention From Analysis by Synthesis",
+    "abstract": "Current attention algorithms (e.g., self-attention) are stimulus-driven and highlight all the salient objects in an image. However, intelligent agents like humans often guide their attention based on the high-level task at hand, focusing only on task-related objects. This ability of task-guided top-down attention provides task-adaptive representation and helps the model generalize to various tasks. In this paper, we consider top-down attention from a classic Analysis-by-Synthesis (AbS) perspective of vision. Prior work indicates a functional equivalence between visual attention and sparse reconstruction; we show that an AbS visual system that optimizes a similar sparse reconstruction objective modulated by a goal-directed top-down signal naturally simulates top-down attention. We further propose Analysis-by-Synthesis Vision Transformer (AbSViT), which is a top-down modulated ViT model that variationally approximates AbS, and achieves controllable top-down attention. For real-world applications, AbSViT consistently improves over baselines on Vision-Language tasks such as VQA and zero-shot retrieval where language guides the top-down attention. AbSViT can also serve as a general backbone, improving performance on classification, semantic segmentation, and model robustness. Project page: https://sites.google.com/view/absvit.",
+    "decision": "Yes, Visual Question Answering/VQA, Zero-shot Vision-Language Learning, Cross-modal Retrieval",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Shi_Top-Down_Visual_Attention_From_Analysis_by_Synthesis_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa",
+      "zero-shot vision-language learning",
+      "cross-modal retrieval"
+    ]
+  },
+  {
+    "title": "3D Concept Learning and Reasoning From Multi-View Images",
+    "abstract": "Humans are able to accurately reason in 3D by gathering multi-view observations of the surrounding world. Inspired by this insight, we introduce a new large-scale benchmark for 3D multi-view visual question answering (3DMV-VQA). This dataset is collected by an embodied agent actively moving and capturing RGB images in an environment using the Habitat simulator. In total, it consists of approximately 5k scenes, 600k images, paired with 50k questions. We evaluate various state-of-the-art models for visual reasoning on our benchmark and find that they all perform poorly. We suggest that a principled approach for 3D reasoning from multi-view images should be to infer a compact 3D representation of the world from the multi-view images, which is further grounded on open-vocabulary semantic concepts, and then to execute reasoning on these 3D representations. As the first step towards this approach, we propose a novel 3D concept learning and reasoning (3D-CLR) framework that seamlessly combines these components via neural fields, 2D pre-trained vision-language models, and neural reasoning operators. Experimental results suggest that our framework outperforms baseline models by a large margin, but the challenge remains largely unsolved. We further perform an in-depth analysis of the challenges and highlight potential future directions.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Hong_3D_Concept_Learning_and_Reasoning_From_Multi-View_Images_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "MixPHM: Redundancy-Aware Parameter-Efficient Tuning for Low-Resource Visual Question Answering",
+    "abstract": "Recently, finetuning pretrained vision-language models (VLMs) has been a prevailing paradigm for achieving state-of-the-art performance in VQA. However, as VLMs scale, it becomes computationally expensive, storage inefficient, and prone to overfitting when tuning full model parameters for a specific task in low-resource settings. Although current parameter-efficient tuning methods dramatically reduce the number of tunable parameters, there still exists a significant performance gap with full finetuning. In this paper, we propose MixPHM, a redundancy-aware parameter-efficient tuning method that outperforms full finetuning in low-resource VQA. Specifically, MixPHM is a lightweight module implemented by multiple PHM-experts in a mixture-of-experts manner. To reduce parameter redundancy, we reparameterize expert weights in a low-rank subspace and share part of the weights inside and across MixPHM. Moreover, based on our quantitative analysis of representation redundancy, we propose Redundancy Regularization, which facilitates MixPHM to reduce task-irrelevant redundancy while promoting task-relevant correlation. Experiments conducted on VQA v2, GQA, and OK-VQA with different low-resource settings show that our MixPHM outperforms state-of-the-art parameter-efficient methods and is the only one consistently surpassing full finetuning.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Jiang_MixPHM_Redundancy-Aware_Parameter-Efficient_Tuning_for_Low-Resource_Visual_Question_Answering_CVPR_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Encyclopedic VQA: Visual Questions About Detailed Properties of Fine-Grained Categories",
+    "abstract": "We propose Encyclopedic-VQA, a large scale visual question answering (VQA) dataset featuring visual questions about detailed properties of fine-grained categories and instances. It contains 221k unique question+answer pairs each matched with (up to) 5 images, resulting in a total of 1M VQA samples. Moreover, our dataset comes with a controlled knowledge base derived from Wikipedia, marking the evidence to support each answer. Empirically, we show that our dataset poses a hard challenge for large vision+language models as they perform poorly on our dataset: PaLI [9] is state-of-the-art on OK-VQA [29], yet it only achieves 13.0% accuracy on our dataset. Moreover, we experimentally show that progress on answering our encyclopedic questions can be achieved by augmenting large models with a mechanism that retrieves relevant information for the knowledge base. An oracle experiment with perfect retrieval achieves 87.0% accuracy on the single-hop portion of our dataset, and an automatic retrieval-\n augmented prototype yields 48.8%. We believe that our dataset enables future research on retrieval-augmented vision+language models.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Mensink_Encyclopedic_VQA_Visual_Questions_About_Detailed_Properties_of_Fine-Grained_Categories_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "PromptCap: Prompt-Guided Image Captioning for VQA with GPT-3",
+    "abstract": "Knowledge-based visual question answering (VQA) involves questions that require world knowledge beyond the image to yield the correct answer. Large language models (LMs) like GPT-3 are particularly helpful for this task because of their strong knowledge retrieval and reasoning capabilities. To enable LM to understand images, prior work uses a captioning model to convert images into text. However, when summarizing an image in a single caption sentence, which visual entities to describe are often underspecified. Generic image captions often miss visual details essential for the LM to answer visual questions correctly. To address this challenge, we propose PromptCap (Prompt-guided image Captioning), a captioning model designed to serve as a better connector between images and black-box LMs. Different from generic captions, PromptCap takes a natural-language prompt to control the visual entities to describe in the generated caption. The prompt contains a question that the caption should aid in answering. To avoid extra annotation, PromptCap is trained by examples synthesized with GPT-3 and existing datasets. We demonstrate PromptCap's effectiveness on an existing pipeline in which GPT-3 is prompted with image captions to carry out VQA. PromptCap outperforms generic captions by a large margin and achieves state-of-the-art accuracy on knowledge-based VQA tasks (60.4% on OK-VQA and 59.6% on A-OKVQA). Zero-shot results on WebQA show that PromptCap generalizes well to unseen domains.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Hu_PromptCap_Prompt-Guided_Image_Captioning_for_VQA_with_GPT-3_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Decouple Before Interact: Multi-Modal Prompt Learning for Continual Visual Question Answering",
+    "abstract": "In the real world, a desirable Visual Question Answering model is expected to provide correct answers to new questions and images in a continual setting (recognized as CL-VQA). However, existing works formulate CLVQA from a vision-only or language-only perspective, and straightforwardly apply the uni-modal continual learning (CL) strategies to this multi-modal task, which is improper and suboptimal. On the one hand, such a partial formulation may result in limited evaluations. On the other hand, neglecting the interactions between modalities will lead to poor performance. To tackle these challenging issues, we propose a comprehensive formulation for CL-VQA from the perspective of multi-modal vision-language fusion. Based on our formulation, we further propose MulTi-Modal PRompt LearnIng with DecouPLing bEfore InTeraction (TRIPLET), a novel approach that builds on a pre-trained vision-language model and consists of decoupled prompts and prompt interaction strategies to capture the complex interactions between modalities. In particular, decoupled prompts contain learnable parameters that are decoupled w.r.t different aspects, and the prompt interaction strategies are in charge of modeling interactions between inputs and prompts. Additionally, we build two CL-VQA benchmarks for a more comprehensive evaluation. Extensive experiments demonstrate that our TRIPLET outperforms state-of-the-art methods in both uni-modal and multi-modal continual settings for CL-VQA.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Qian_Decouple_Before_Interact_Multi-Modal_Prompt_Learning_for_Continual_Visual_Question_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Discovering Spatio-Temporal Rationales for Video Question Answering",
+    "abstract": "This paper strives to solve complex video question answering (VideoQA) which features long videos containing multiple objects and events at different time. To tackle the challenge, we highlight the importance of identifying question-critical temporal moments and spatial objects from the vast amount of video content. Towards this, we propose a Spatio-Temporal Rationalizer (STR), a differentiable selection module that adaptively collects question-critical moments and objects using cross-modal interaction. The discovered video moments and objects are then served as grounded rationales to support answer reasoning. Based on STR, we further propose TranSTR, a Transformer-style neural network architecture that takes STR as the core and additionally underscores a novel answer interaction mechanism to coordinate STR for answer decoding. Experiments on four datasets show that TranSTR achieves new state-of-the-art (SoTA). Especially, on NExT-QA and Causal-VidQA which feature complex VideoQA, it significantly surpasses the previous SoTA by 5.8% and 6.8%, respectively. We then conduct extensive studies to verify the importance of STR as well as the proposed answer interaction mechanism. With the success of TranSTR and our comprehensive analysis, we hope this work can spark more future efforts in complex VideoQA. Our results are fully reproducible at https://anonymous.4open.science/r/TranSTR/.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Li_Discovering_Spatio-Temporal_Rationales_for_Video_Question_Answering_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Toward Multi-Granularity Decision-Making: Explicit Visual Reasoning with Hierarchical Knowledge",
+    "abstract": "Answering visual questions requires the ability to parse visual observations and correlate them with a variety of knowledge. Existing visual question answering (VQA) models either pay little attention to the role of knowledge or do not take into account the granularity of knowledge, e.g., attaching the color of \"grassland\" to \"ground\"). They have yet to develop the capability of modeling knowledge of multiple granularity, and are also vulnerable to spurious data biases. To fill the gap, this paper makes progresses from two distinct perspectives: (1) It presents a Hierarchical Concept Graph (HCG) that discriminates and associates multi-granularity concepts with a multi-layered hierarchical structure, aligning visual observations with knowledge across different levels to alleviate data biases. (2) To facilitate a comprehensive understanding of how knowledge contributes throughout the decision-making process, we further propose an interpretable Hierarchical Concept Neural Module Network (HCNMN) It explicitly propagates multi-granularity knowledge across the hierarchical structure and incorporates them with a sequence of reasoning steps, providing a transparent interface to elaborate on the integration of observations and knowledge. Through extensive experiments on multiple challenging datasets (i.e., GQA,VQA,FVQA,OK-VQA) , we demonstrate the effectiveness of our method in answering questions in different scenarios. Our code is available at https://github.com/SuperJohnZhang/HCNMN.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Toward_Multi-Granularity_Decision-Making_Explicit_Visual_Reasoning_with_Hierarchical_Knowledge_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Knowledge Proxy Intervention for Deconfounded Video Question Answering",
+    "abstract": "Recently, Video Question-Answering (VideoQA) has drawn more and more attention from both industry and research community. Despite all the success achieved by recent works, dataset bias always harmfully misleads current methods focusing on spurious correlations in training data. To analyze the effects of dataset bias, we frame the VideoQA pipeline into a causal graph, which shows the causalities among video, question, aligned feature between video and question, answer, and underlying confounder. Through the causal graph, we prove that the confounder and the backdoor path lead to spurious causality. To tackle the challenge that the confounder in VideoQA is unobserved and non-enumerable in general, we propose a model-agnostic framework called Knowledge Proxy Intervention (KPI), which introduces an extra knowledge proxy variable in the causal graph to cut the backdoor path and remove the confounder. Our KPI framework exploits the front-door adjustment, which requires no prior knowledge about the confounder. The effectiveness of our KPI framework is corroborated by three baseline methods on five benchmark datasets, including MSVD-QA, MSRVTT-QA, TGIF-QA, NExT-QA, and Causal-VidQA.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Li_Knowledge_Proxy_Intervention_for_Deconfounded_Video_Question_Answering_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "ChartReader: A Unified Framework for Chart Derendering and Comprehension without Heuristic Rules",
+    "abstract": "Charts are a powerful tool for visually conveying complex data, but their comprehension poses a challenge due to the diverse chart types and intricate components. Existing chart comprehension methods suffer from either heuristic rules or an over-reliance on OCR systems, resulting in suboptimal performance. To address these issues, we present ChartReader, a unified framework that seamlessly integrates chart derendering and comprehension tasks. Our approach includes a transformer-based chart component detection module and an extended pre-trained vision-language model for chart-to-X tasks. By learning the rules of charts automatically from annotated datasets, our approach eliminates the need for manual rule-making, reducing effort and enhancing accuracy. We also introduce a data variable replacement technique and extend the input and position embeddings of the pre-trained model for cross-task training. We evaluate ChartReader on Chart-to-Table, ChartQA, and Chart-to-Text tasks, demonstrating its superiority over existing methods. Our proposed framework can significantly reduce the manual effort involved in chart analysis, providing a step towards a universal chart understanding model. Moreover, our approach offers opportunities for plug-and-play integration with mainstream LLMs such as T5 and TaPas, extending their capability to chart comprehension tasks.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Cheng_ChartReader_A_Unified_Framework_for_Chart_Derendering_and_Comprehension_without_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Open-vocabulary Video Question Answering: A New Benchmark for Evaluating the Generalizability of Video Question Answering Models",
+    "abstract": "Video Question Answering (VideoQA) is a challenging task that entails complex multi-modal reasoning. In contrast to multiple-choice VideoQA which aims to predict the answer given several options, the goal of open-ended VideoQA is to answer questions without restricting candidate answers. However, the majority of previous VideoQA models formulate open-ended VideoQA as a classification task to classify the video-question pairs into a fixed answer set, i.e., closed-vocabulary, which contains only frequent answers (e.g., top-1000 answers). This leads the model to be biased toward only frequent answers and fail to generalize on out-of-vocabulary answers. We hence propose a new benchmark, Open-vocabulary Video Question Answering (OVQA), to measure the generalizability of VideoQA models by considering rare and unseen answers. In addition, in order to improve the model's generalization power, we introduce a novel GNN-based soft verbalizer that enhances the prediction on rare and unseen answers by aggregating the information from their similar words. For evaluation, we introduce new baselines by modifying the existing (closed-vocabulary) open-ended VideoQA models and improve their performances by further taking into account rare and unseen answers. Our ablation studies and qualitative analyses demonstrate that our GNN-based soft verbalizer further improves the model performance, especially on rare and unseen answers. We hope that our benchmark OVQA can serve as a guide for evaluating the generalizability of VideoQA models and inspire future research. Code is available at https://github.com/mlvlab/OVQA.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Ko_Open-vocabulary_Video_Question_Answering_A_New_Benchmark_for_Evaluating_the_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering",
+    "abstract": "Despite thousands of researchers, engineers, and artists actively working on improving text-to-image generation models, systems often fail to produce images that accurately align with the text inputs. We introduce TIFA (Text-to-image Faithfulness evaluation with question Answering), an automatic evaluation metric that measures the faithfulness of a generated image to its text input via visual question answering (VQA). Specifically, given a text input, we automatically generate several question-answer pairs using a language model. We calculate image faithfulness by checking whether existing VQA models can answer these questions using the generated image. TIFA is a reference-free metric that allows for fine-grained and interpretable evaluations of generated images.TIFA also has better correlations with human judgments than existing metrics. Based on this approach, we introduce TIFA v1.0, a benchmark consisting of 4K diverse text inputs and 25K questions across 12 categories (object, counting, etc.). We present a comprehensive evaluation of existing text-to-image models using TIFA v1.0 and highlight the limitations and challenges of current models. For instance, we find that current text-to-image models, despite doing well on color and material, still struggle in counting, spatial relations, and composing multiple objects. We hope our benchmark will help carefully measure the research progress in text-to-image synthesis and provide valuable insights for further research.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Hu_TIFA_Accurate_and_Interpretable_Text-to-Image_Faithfulness_Evaluation_with_Question_Answering_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Towards Models that Can See and Read",
+    "abstract": "Visual Question Answering (VQA) and Image Captioning (CAP), which are among the most popular vision-language tasks, \n have analogous scene-text versions that require reasoning from the text in the image. Despite their obvious resemblance, the two are treated independently and, as we show, yield task-specific methods that can either see or read, but not both. In this work, we conduct an in-depth analysis of this phenomenon and propose UniTNT, a Unified Text-Non-Text approach, which grants existing multimodal architectures scene-text understanding capabilities. Specifically, we treat scene-text information as an additional modality, fusing it with any pretrained encoder-decoder-based architecture via designated modules. Thorough experiments reveal that UniTNT leads to the first single model that successfully handles both task types. Moreover, we show that scene-text understanding capabilities can boost vision-language models' performance on general VQA and CAP by up to 2.69% and 0.6 CIDEr, respectively.",
+    "decision": "Yes, Visual Question Answering/VQA and Image Captioning/Video Captioning/Scene Captioning",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Ganz_Towards_Models_that_Can_See_and_Read_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa",
+      "image captioning/video captioning/scene captioning"
+    ]
+  },
+  {
+    "title": "TIJO: Trigger Inversion with Joint Optimization for Defending Multimodal Backdoored Models",
+    "abstract": "We present a Multimodal Backdoor defense technique TIJO (Trigger Inversion using Joint Optimization). Recently Walmer et al. demonstrated successful backdoor attacks on multimodal models for the Visual Question Answering task. Their dual-key backdoor trigger is split across two modalities (image and text), such that the backdoor is activated if and only if the trigger is present in both modalities. We propose TIJO that defends against dual-key attacks through a joint optimization that reverse-engineers the trigger in both the image and text modalities. This joint optimization is challenging in multimodal models due to the disconnected nature of the visual pipeline which consists of an offline feature extractor, whose output is then fused with the text using a fusion module. The key insight enabling the joint optimization in TIJO is that the trigger inversion needs to be carried out in the object detection box feature space as opposed to the pixel space. We demonstrate the effectiveness of our method on the TrojVQA benchmark, where TIJO improves upon the state-of-the-art unimodal methods from an AUC of 0.6 to 0.92 on multimodal dual-key backdoors. Furthermore, our method also improves upon the unimodal baselines on unimodal backdoors. We also present detailed ablation studies as well as qualitative results to provide insights into our algorithm such as the critical importance of overlaying the inverted feature triggers on all visual features during trigger inversion.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Sur_TIJO_Trigger_Inversion_with_Joint_Optimization_for_Defending_Multimodal_Backdoored_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Tem-Adapter: Adapting Image-Text Pretraining for Video Question Answer",
+    "abstract": "Video-language pre-trained models have shown remarkable success in guiding video question-answering (VideoQA) tasks. However, due to the length of video sequences, training large-scale video-based models incurs considerably higher costs than training image-based ones. This motivates us to leverage the knowledge from image-based pretraining, despite the obvious gaps between image and video domains. To bridge these gaps, in this paper, we propose Tem-Adapter, which enables the learning of temporal dynamics and complex semantics by a visual Temporal Aligner and a textual Semantic Aligner. Unlike conventional pretrained knowledge adaptation methods that only concentrate on the downstream task objective, the Temporal Aligner introduces an extra language-guided autoregressive task aimed at facilitating the learning of temporal dependencies, with the objective of predicting future states based on historical clues and language guidance that describes event progression. Besides, to reduce the semantic gap and adapt the textual representation for better event description, we introduce a Semantic Aligner that first designs a template to fuse question and answer pairs as event descriptions and then learns a Transformer decoder with the whole video sequence as guidance for refinement. We evaluate Tem-Adapter and different pre-train transferring methods on two VideoQA benchmarks, and the significant performance improvement demonstrates the effectiveness of our method.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Chen_Tem-Adapter_Adapting_Image-Text_Pretraining_for_Video_Question_Answer_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "Variational Causal Inference Network for Explanatory Visual Question Answering",
+    "abstract": "Explanatory Visual Question Answering (EVQA) is a recently proposed multimodal reasoning task that requires answering visual questions and generating multimodal explanations for the reasoning processes. Unlike traditional Visual Question Answering (VQA) which focuses solely on answering, EVQA aims to provide user-friendly explanations to enhance the explainability and credibility of reasoning models. However, existing EVQA methods typically predict the answer and explanation separately, which ignores the causal correlation between them. Moreover, they neglect the complex relationships among question words, visual regions, and explanation tokens. To address these issues, we propose a Variational Causal Inference Network (VCIN) that establishes the causal correlation between predicted answers and explanations, and captures cross-modal relationships to generate rational explanations. First, we utilize a vision-and-language pretrained model to extract visual features and question features. Secondly, we propose a multimodal explanation gating transformer that constructs cross-modal relationships and generates rational explanations. Finally, we propose a variational causal inference to establish the target causal structure and predict the answers. Comprehensive experiments demonstrate the superiority of VCIN over state-of-the-art EVQA methods.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Xue_Variational_Causal_Inference_Network_for_Explanatory_Visual_Question_Answering_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "eP-ALM: Efficient Perceptual Augmentation of Language Models",
+    "abstract": "Large Language Models (LLMs) have so far impressed the world, with unprecedented capabilities that emerge in models at large scales. On the vision side, transformer models (i.e., ViT) are following the same trend, achieving the best performance on challenging benchmarks. With the abundance of such unimodal models, a natural question arises; do we need also to follow this trend to tackle multimodal tasks? In this work, we propose to rather direct effort to efficient adaptations of existing models, and propose to augment Language Models with perception. Existing approaches for adapting pretrained models for vision-language tasks still rely on several key components that hinder their efficiency. In particular, they still train a large number of parameters, rely on large multimodal pretraining, use encoders (e.g., CLIP) trained on huge image-text datasets, and add significant inference overhead. In addition, most of these approaches have focused on Zero-Shot and In Context Learning, with little to no effort on direct finetuning. We investigate the minimal computational effort needed to adapt unimodal models for multimodal tasks and propose a new challenging setup, alongside different approaches, that efficiently adapts unimodal pretrained models. \n We show that by freezing more than 99% of total parameters, training only one linear projection layer, and prepending only one trainable token, our approach (dubbed eP-ALM) significantly outperforms other baselines on VQA and Captioning across Image, Video, and Audio modalities, following the proposed setup. The code is available here: https://github.com/mshukor/eP-ALM.",
+    "decision": "Yes, Visual Question Answering/VQA, Image Captioning/Video Captioning/Scene Captioning",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Shukor_eP-ALM_Efficient_Perceptual_Augmentation_of_Language_Models_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa",
+      "image captioning/video captioning/scene captioning"
+    ]
+  },
+  {
+    "title": "Toward Unsupervised Realistic Visual Question Answering",
+    "abstract": "The problem of realistic VQA (RVQA), where a model has to reject unanswerable questions (UQs) and answer answerable ones (AQs), is studied. We first point out 2 drawbacks in current RVQA research, where (1) datasets contain too many unchallenging UQs and (2) a large number of annotated UQs are required for training. To resolve the first drawback, we propose a new testing dataset, RGQA, which combines AQs from an existing VQA dataset with around 29K human-annotated UQs. These UQs consist of both fine-grained and coarse-grained image-question pairs generated with 2 approaches: CLIP-based and Perturbation-based. To address the second drawback, we introduce an unsupervised training approach. This combines pseudo UQs obtained by randomly pairing images and questions, with an RoI Mixup procedure to generate more fine-grained pseudo UQs, and model ensembling to regularize model confidence. Experiments show that using pseudo UQs significantly outperforms RVQA baselines. RoI Mixup and model ensembling further increase the gain. Finally, human evaluation reveals a performance gap between humans and models, showing that more RVQA research is needed.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Toward_Unsupervised_Realistic_Visual_Question_Answering_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "IntentQA: Context-aware Video Intent Reasoning",
+    "abstract": "In this paper, we propose a novel task IntentQA, a special VideoQA task focusing on video intent reasoning, which has become increasingly important for AI with its advantages in equipping AI agents with the capability of reasoning beyond mere recognition in daily tasks. We also contribute a large-scale VideoQA dataset for this task. We propose a Context-aware Video Intent Reasoning model (CaVIR) consisting of i) Video Query Language (VQL) for better cross-modal representation of the situational context, ii) Contrastive Learning module for utilizing the contrastive context, and iii) Commonsense Reasoning module for incorporating the commonsense context. Comprehensive experiments on this challenging task demonstrate the effectiveness of each model component, the superiority of our full model over other baselines, and the generalizability of our model to a new VideoQA task. The dataset and codes are open-sourced at: https://github.com/JoseponLee/IntentQA.git",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Li_IntentQA_Context-aware_Video_Intent_Reasoning_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "ViperGPT: Visual Inference via Python Execution for Reasoning",
+    "abstract": "Answering visual queries is a complex task that requires both visual processing and reasoning. End-to-end models, the dominant approach for this task, do not explicitly differentiate between the two, limiting interpretability and generalization. Learning modular programs presents a promising alternative, but has proven challenging due to the difficulty of learning both the programs and modules simultaneously. We introduce ViperGPT, a framework that leverages code-generation models to compose vision-and-language models into subroutines to produce a result for any query. ViperGPT utilizes a provided API to access the available modules, and composes them by generating Python code that is later executed. This simple approach requires no further training, and achieves state-of-the-art results across various complex visual tasks.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Suris_ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "VQA Therapy: Exploring Answer Differences by Visually Grounding Answers",
+    "abstract": "Visual question answering is a task of predicting the answer to a question about an image. Given that different people can provide different answers to a visual question, we aim to better understand why with answer groundings. We introduce the first dataset that visually grounds each unique answer to each visual question, which we call VQAAnswerTherapy. We then propose two novel problems of predicting whether a visual question has a single answer grounding and localizing all answer groundings. We benchmark modern algorithms for these novel problems to show where they succeed and struggle. The dataset and evaluation server can be found publicly at https://vizwiz.org/tasks-and-datasets/vqa-answer-therapy/.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Chen_VQA_Therapy_Exploring_Answer_Differences_by_Visually_Grounding_Answers_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  },
+  {
+    "title": "VQA-GNN: Reasoning with Multimodal Knowledge via Graph Neural Networks for Visual Question Answering",
+    "abstract": "Visual question answering (VQA) requires systems to perform concept-level reasoning by unifying unstructured (e.g., the context in question and answer; \"QA context\") and structured (e.g., knowledge graph for the QA context and scene; \"concept graph\") multimodal knowledge. Existing works typically combine a scene graph and a concept graph of the scene by connecting corresponding visual nodes and concept nodes, then incorporate the QA context representation to perform question answering. However, these methods only perform a unidirectional fusion from unstructured knowledge to structured knowledge, limiting their potential to capture joint reasoning over the heterogeneous modalities of knowledge. To perform more expressive reasoning, we propose VQA-GNN, a new VQA model that performs bidirectional fusion between unstructured and structured multimodal knowledge to obtain unified knowledge representations. Specifically, we inter-connect the scene graph and the concept graph through a super node that represents the QA context, and introduce a new multimodal GNN technique to perform inter-modal message passing for reasoning that mitigates representational gaps between modalities. On two challenging VQA tasks (VCR and GQA), our method outperforms strong baseline VQA methods by 3.2% on VCR (Q-AR) and 4.6% on GQA, suggesting its strength in performing concept-level reasoning. Ablation studies further demonstrate the efficacy of the bidirectional fusion and multimodal GNN method in unifying unstructured and structured multimodal knowledge.",
+    "decision": "Yes, Visual Question Answering/VQA",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Wang_VQA-GNN_Reasoning_with_Multimodal_Knowledge_via_Graph_Neural_Networks_for_ICCV_2023_paper.html",
+    "category": [
+      "visual question answering/vqa"
+    ]
+  }
+]

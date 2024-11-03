@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Fusing Pre-Trained Language Models With Multimodal Prompts Through Reinforcement Learning",
+    "abstract": "Language models are capable of commonsense reasoning: while domain-specific models can learn from explicit knowledge (e.g. commonsense graphs [6], ethical norms [25]), and larger models like GPT-3 manifest broad commonsense reasoning capacity. Can their knowledge be extended to multimodal inputs such as images and audio without paired domain data? In this work, we propose ESPER (Extending Sensory PErception with Reinforcement learning) which enables text-only pretrained models to address multimodal tasks such as visual commonsense reasoning. Our key novelty is to use reinforcement learning to align multimodal inputs to language model generations without direct supervision: for example, our reward optimization relies only on cosine similarity derived from CLIP and requires no additional paired (image, text) data. Experiments demonstrate that ESPER outperforms baselines and prior work on a variety of multimodal text generation tasks ranging from captioning to commonsense reasoning; these include a new benchmark we collect and release, the ESP dataset, which tasks models with generating the text of several different domains for each image. Our code and data are publicly released at https://github.com/JiwanChung/esper.",
+    "decision": "Yes, Visual Commonsense Reasoning",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Fusing_Pre-Trained_Language_Models_With_Multimodal_Prompts_Through_Reinforcement_Learning_CVPR_2023_paper.html",
+    "category": [
+      "visual commonsense reasoning"
+    ]
+  },
+  {
+    "title": "Are Deep Neural Networks SMARTer Than Second Graders?",
+    "abstract": "Recent times have witnessed an increasing number of applications of deep neural networks towards solving tasks that require superior cognitive abilities, e.g., playing Go, generating art, question answering (such as ChatGPT), etc. Such a dramatic progress raises the question: how generalizable are neural networks in solving problems that demand broad skills? To answer this question, we propose SMART: a Simple Multimodal Algorithmic Reasoning Task and the associated SMART-101 dataset, for evaluating the abstraction, deduction, and generalization abilities of neural networks in solving visuo-linguistic puzzles designed specifically for children in the 6--8 age group. Our dataset consists of 101 unique puzzles; each puzzle comprises a picture and a question, and their solution needs a mix of several elementary skills, including arithmetic, algebra, and spatial reasoning, among others. To scale our dataset towards training deep neural networks, we programmatically generate entirely new instances for each puzzle while retaining their solution algorithm. To benchmark the performance on the SMART-101 dataset, we propose a vision-and-language meta-learning model that can incorporate varied state-of-the-art neural backbones. Our experiments reveal that while powerful deep models offer reasonable performances on puzzles in a supervised setting, they are not better than random accuracy when analyzed for generalization -- filling this gap may demand new multimodal learning approaches.",
+    "decision": "Yes, Visual Commonsense Reasoning",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Cherian_Are_Deep_Neural_Networks_SMARTer_Than_Second_Graders_CVPR_2023_paper.html",
+    "category": [
+      "visual commonsense reasoning"
+    ]
+  },
+  {
+    "title": "Improving Commonsense in Vision-Language Models via Knowledge Graph Riddles",
+    "abstract": "This paper focuses on analyzing and improving the commonsense ability of recent popular vision-language (VL) models. Despite the great success, we observe that existing VL-models still lack commonsense knowledge/reasoning ability (e.g., \"Lemons are sour\"), which is a vital component towards artificial general intelligence. Through our analysis, we find one important reason is that existing large-scale VL datasets do not contain much commonsense knowledge, which motivates us to improve the commonsense of VL-models from the data perspective. Rather than collecting a new VL training dataset, we propose a more scalable strategy, i.e., \"Data Augmentation with kNowledge graph linearization for CommonsensE capability\" (DANCE). It can be viewed as one type of data augmentation technique, which can inject commonsense knowledge into existing VL datasets on the fly during training. More specifically, we leverage the commonsense knowledge graph (e.g., ConceptNet) and create variants of text description in VL datasets via bidirectional sub-graph sequentialization. For better commonsense evaluation, we further propose the first retrieval-based commonsense diagnostic benchmark. By conducting extensive experiments on some representative VL-models, we demonstrate that our DANCE technique is able to significantly improve the commonsense ability while maintaining the performance on vanilla retrieval tasks.",
+    "decision": "Yes, Visual Commonsense Reasoning",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Ye_Improving_Commonsense_in_Vision-Language_Models_via_Knowledge_Graph_Riddles_CVPR_2023_paper.html",
+    "category": [
+      "visual commonsense reasoning"
+    ]
+  },
+  {
+    "title": "Breaking Common Sense: WHOOPS! A Vision-and-Language Benchmark of Synthetic and Compositional Images",
+    "abstract": "Weird, unusual, and uncanny images pique the curiosity of observers because they challenge commonsense. For example, an image released during the 2022 world cup depicts the famous soccer stars Lionel Messi and Cristiano Ronaldo playing chess, which playfully violates our expectation that their competition should occur on the football field.\n Humans can easily recognize and interpret these unconventional images, but can AI models do the same?\n We introduce WHOOPS!, a new dataset and benchmark for visual commonsense. The dataset is comprised of purposefully commonsense-defying images created by designers using publicly-available image generation tools like Midjourney.\n We consider several tasks posed over the dataset.\n In addition to image captioning, cross-modal matching, and visual question answering, we introduce a difficult explanation generation task, where models must identify and explain why a given image is unusual. Our results show that state-of-the-art models such as GPT3 and BLIP2 still lag behind human performance on WHOOPS!.\n We hope our dataset will inspire the development of AI models with stronger visual commonsense reasoning abilities.",
+    "decision": "Yes, Visual Commonsense Reasoning",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Bitton-Guetta_Breaking_Common_Sense_WHOOPS_A_Vision-and-Language_Benchmark_of_Synthetic_and_ICCV_2023_paper.html",
+    "category": [
+      "visual commonsense reasoning"
+    ]
+  },
+  {
+    "title": "Beyond Object Recognition: A New Benchmark towards Object Concept Learning",
+    "abstract": "Understanding objects is a central building block of AI, especially for embodied AI. Even though object recognition excels with deep learning, current machines struggle to learn higher-level knowledge, e.g., what attributes an object has, and what we can do with it. Here, we propose a challenging Object Concept Learning (OCL) task to push the envelope of object understanding. It requires machines to reason out affordances and simultaneously give the reason: what attributes make an object possess these affordances. To support OCL, we build a densely annotated knowledge base including extensive annotations for three levels of object concept (category, attribute, affordance), and the clear causal relations of three levels. By analyzing the causal structure of OCL, we present a baseline, Object Concept Reasoning Network (OCRN). It leverages concept instantiation and causal intervention to infer the three levels. In experiments, OCRN effectively infers the object knowledge while following the causalities well. Our data and code are available at https://mvig-rhos.com/ocl.",
+    "decision": "Yes, Visual Commonsense Reasoning",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Li_Beyond_Object_Recognition_A_New_Benchmark_towards_Object_Concept_Learning_ICCV_2023_paper.html",
+    "category": [
+      "visual commonsense reasoning"
+    ]
+  },
+  {
+    "title": "X-VoE: Measuring eXplanatory Violation of Expectation in Physical Events",
+    "abstract": "Intuitive physics is pivotal for human understanding of the physical world, enabling prediction and interpretation of events even in infancy. Nonetheless, replicating this level of intuitive physics in artificial intelligence (AI) remains a formidable challenge. This study introduces X-VoE, a comprehensive benchmark dataset, to assess AI agents' grasp of intuitive physics. Built on the developmental psychology-rooted Violation of Expectation (VoE) paradigm, X-VoE establishes a higher bar for the explanatory capacities of intuitive physics models. Each VoE scenario within X-VoE encompasses three distinct settings, probing models' comprehension of events and their underlying explanations. Beyond model evaluation, we present an explanation-based learning system that captures physics dynamics and infers occluded object states solely from visual sequences, without explicit occlusion labels. Experimental outcomes highlight our model's alignment with human commonsense when tested against X-VoE. A remarkable feature is our model's ability to visually expound VoE events by reconstructing concealed scenes. Concluding, we discuss the findings' implications and outline future research directions. Through X-VoE, we catalyze the advancement of AI endowed with human-like intuitive physics capabilities.",
+    "decision": "Yes, Visual Commonsense Reasoning",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Dai_X-VoE_Measuring_eXplanatory_Violation_of_Expectation_in_Physical_Events_ICCV_2023_paper.html",
+    "category": [
+      "visual commonsense reasoning"
+    ]
+  }
+]

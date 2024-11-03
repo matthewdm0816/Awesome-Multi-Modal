@@ -1,0 +1,18 @@
+Title: {title}
+Abstract: {abstract}
+---
+This is the title and abstract of a computer science paper, as a professional researcher, decide if it is a Multi-Modal and Vision-Language Learning paper that explictly involves more than one modality. If it is, decide which category it is in [
+    "Visual Question Answering/VQA",
+    "Visual Dialog",
+    "Image Captioning/Video Captioning/Scene Captioning",
+    "Visual Grounding",
+    "Vision-Language Navigation",
+    "Vision-Language Representation Learning/Pretraining",
+    "Visual Commonsense Reasoning",
+    "Few-shot/Zero-shot Vision-Language Learning",
+    "Cross-modal Retrieval",
+    "Other Multi-modal Learning",
+]
+Analyze the paper. Output a "[RESULT]" and the give a SIMPLE conclusion of "yes/no", if yes, also give the category. ONLY output the final decision.
+e.g: " [RESULT] Yes, Visual Question Answering/VQA"
+e.g: " [RESULT] No"
